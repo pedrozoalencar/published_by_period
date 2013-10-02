@@ -12,7 +12,7 @@ require 'ffaker'
 require 'acts_as_fu'
 require 'rspec'
 require 'timecop'
-require 'publishable'
+require 'published_by_period'
 
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.

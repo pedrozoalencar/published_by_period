@@ -15,7 +15,7 @@ module PublishedByPeriod
     MAJOR = 0
 
     # The minor version number, incremented for significant releases of new features.
-    MINOR = 0
+    MINOR = 1
 
     # The patch-level, incremented for minor bug fixes / patches.
     PATCH = 1

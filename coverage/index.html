@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>Code coverage for Publishable</title>
+    <title>Code coverage for Published by period</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.7.1/application.js' type='text/javascript'></script>    
     <link href='./assets/0.7.1/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.7.1/favicon_yellow.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.7.1/favicon_red.png" />
     <link rel="icon" type="image/png" href="./assets/0.7.1/favicon.png" />
   </head>
   
@@ -14,27 +14,27 @@
       <img src="./assets/0.7.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-04-24T16:39:09-03:00">2013-04-24T16:39:09-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-04-26T14:12:55-03:00">2013-04-26T14:12:55-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">84.85%</span></span>
+    (<span class="covered_percent"><span class="red">57.14%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         3.95
+       <span class="red">
+         0.65
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>2</b> files in total.
-    <b>66</b> relevant lines. 
-    <span class="green"><b>56</b> lines covered</span> and
-    <span class="red"><b>10</b> lines missed </span>
+    <b>28</b> relevant lines. 
+    <span class="green"><b>16</b> lines covered</span> and
+    <span class="red"><b>12</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -51,23 +51,23 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#0cba57a4ca23e3dbb1506f6c8e3f47429a4b2f99" class="src_link" title="lib/publishable.rb">lib/publishable.rb</a></td>
-        <td class="yellow strong">84.75 %</td>
-        <td>287</td>
-        <td>59</td>
-        <td>50</td>
-        <td>9</td>
-        <td>3.8</td>
+        <td class="strong"><a href="#8f200a5925bc4d11cc10ca029c1ecb4d7e3000ac" class="src_link" title="lib/published_by_period.rb">lib/published_by_period.rb</a></td>
+        <td class="red strong">71.43 %</td>
+        <td>165</td>
+        <td>21</td>
+        <td>15</td>
+        <td>6</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#f1a5db56858f4caf44ed135538a6c5984f1b370c" class="src_link" title="spec/support/matcher_each.rb">spec/support/matcher_each.rb</a></td>
-        <td class="yellow strong">85.71 %</td>
+        <td class="strong"><a href="#1bc89fae1346b4be3c3574f28a454773471c5f9f" class="src_link" title="spec/support/matcher_each.rb">spec/support/matcher_each.rb</a></td>
+        <td class="red strong">14.29 %</td>
         <td>12</td>
         <td>7</td>
-        <td>6</td>
         <td>1</td>
-        <td>4.1</td>
+        <td>6</td>
+        <td>0.1</td>
       </tr>
       
     </tbody>
@@ -86,14 +86,14 @@
     
       <div class="source_files">
       
-        <div class="source_table" id="0cba57a4ca23e3dbb1506f6c8e3f47429a4b2f99">
+        <div class="source_table" id="8f200a5925bc4d11cc10ca029c1ecb4d7e3000ac">
   <div class="header">
-    <h3>lib/publishable.rb</h3>
-    <h4><span class="yellow">84.75 %</span> covered</h4>
+    <h3>lib/published_by_period.rb</h3>
+    <h4><span class="red">71.43 %</span> covered</h4>
     <div>
-      <b>59</b> relevant lines. 
-      <span class="green"><b>50</b> lines covered</span> and
-      <span class="red"><b>9</b> lines missed.</span>
+      <b>21</b> relevant lines. 
+      <span class="green"><b>15</b> lines covered</span> and
+      <span class="red"><b>6</b> lines missed.</span>
     </div>
   </div>
   
@@ -115,259 +115,259 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">require 'publishable/railtie' if defined?(Rails)</code>
+          <code class="ruby">require 'published_by_period/railtie' if defined?(Rails)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="4">
           
-          <code class="ruby">require 'workflow'</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
           
           
-          <code class="ruby"></code>
+          <code class="ruby"># Allows a given boolean, date, or datetime column to indicate whether a model object is published.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
           
           
-          <code class="ruby"># Allows a given boolean, date, or datetime column to indicate whether a model object is published.</code>
+          <code class="ruby"># Boolean published column just is an on/off flag.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby"># Boolean published column just is an on/off flag.</code>
+          <code class="ruby"># Date/datetime column requires value of published column to be before &quot;now&quot; for the object to be published.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby"># Date/datetime column requires value of published column to be before &quot;now&quot; for the object to be published.</code>
+          <code class="ruby"># Specify the column name via the :on option (defaults to :published) and make sure to create the column</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby"># Specify the column name via the :on option (defaults to :published) and make sure to create the column</code>
+          <code class="ruby"># in your migrations.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
           
           
-          <code class="ruby"># in your migrations.</code>
+          <code class="ruby">#</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
-          <code class="ruby">#</code>
+          <code class="ruby"># Provides scopes for finding published and unpublished items, and (for date/datetime published columns) for returning</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
           
           
-          <code class="ruby"># Provides scopes for finding published and unpublished items, and (for date/datetime published columns) for returning</code>
+          <code class="ruby"># recent or upcoming items.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
           
           
-          <code class="ruby"># recent or upcoming items.</code>
+          <code class="ruby">#</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
           
           
-          <code class="ruby">#</code>
+          <code class="ruby"># @author Martin Linkhorst &lt;m.linkhorst@googlemail.com&gt;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
           
           
-          <code class="ruby"># @author Martin Linkhorst &lt;m.linkhorst@googlemail.com&gt;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="16">
-          
-          
           <code class="ruby"># @author David Daniell / тιηуηυмвєяѕ &lt;info@tinynumbers.com&gt;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
+        <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
-          <code class="ruby">module Publishable</code>
+          <code class="ruby">module PublishedByPeriod</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">  # Add our features to the base class.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">  # @see ClassMethods#publishable</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">  # @param [Object] base</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="22">
+        <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
           <code class="ruby">  def self.extended(base)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="23">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="21">
+          <span class="hits">3</span>
           
           <code class="ruby">    base.extend ClassMethods</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
+        <li class="never" data-hits="" data-linenumber="24">
           
           
           <code class="ruby">  # Define scopes and methods for querying and manipulating Publishables.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="27">
+        <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
           <code class="ruby">  module ClassMethods</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="28">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="26">
           
-          <code class="ruby">    include Workflow</code>
+          
+          <code class="ruby">    </code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="27">
           
           
           <code class="ruby">    # DSL method to link this behavior into your model.  In your ActiveRecord model class, add +publishable+ to include</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="30">
+        <li class="never" data-hits="" data-linenumber="28">
           
           
           <code class="ruby">    # the scopes and methods for publishable objects.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
+        <li class="never" data-hits="" data-linenumber="29">
           
           
           <code class="ruby">    #</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby">    # @example</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="never" data-hits="" data-linenumber="31">
           
           
           <code class="ruby">    #   class Post &lt; ActiveRecord::Base</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="32">
           
           
           <code class="ruby">    #     publishable</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="35">
+        <li class="never" data-hits="" data-linenumber="33">
           
           
           <code class="ruby">    #   end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby">    #</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
+        <li class="never" data-hits="" data-linenumber="35">
           
           
           <code class="ruby">    # @param [Hash] options The publishable options.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="38">
+        <li class="never" data-hits="" data-linenumber="36">
           
           
           <code class="ruby">    # @option options [String, Symbol] :on (:publishable) The name of the publishable column on the model.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="39">
+        <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
-          <code class="ruby">    def publishable(options = {})</code>
+          <code class="ruby">    def published_by_period(options = {})</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="40">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="38">
+          <span class="hits">3</span>
           
           <code class="ruby">      return unless table_exists?</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
+        <li class="never" data-hits="" data-linenumber="39">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="42">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="40">
+          <span class="hits">3</span>
           
-          <code class="ruby">      publish_type = (options[:type] || :datetime)</code>
+          <code class="ruby">      column_start_name = (options[:start] || :publish_start).to_sym</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="43">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="41">
+          <span class="hits">3</span>
           
-          <code class="ruby">      column_name = nil;</code>
+          <code class="ruby">      column_end_name = (options[:end] || :publish_end).to_sym</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="44">
-          <span class="hits">5</span>
+        <li class="never" data-hits="" data-linenumber="42">
           
-          <code class="ruby">      column_start_name = nil;</code>
+          
+          <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="45">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="43">
+          <span class="hits">3</span>
           
-          <code class="ruby">      column_end_name = nil;</code>
+          <code class="ruby">      unless self.columns_hash[column_start_name.to_s].present? and self.columns_hash[column_end_name.to_s].present?</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="44">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        raise ActiveRecord::ConfigurationError, &quot;No '#{column_start_name}'column available for PublishedByPeriod column on model #{self.name}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="46">
@@ -376,34 +376,34 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="47">
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">      #Obtain columns name and check consistency between publish type and column type</code>
+          <code class="ruby">      if respond_to?(:scope)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="48">
-          <span class="hits">5</span>
+        <li class="never" data-hits="" data-linenumber="48">
           
-          <code class="ruby">      case publish_type</code>
+          
+          <code class="ruby">        # define published/unpublished scope</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="49">
+        <li class="covered" data-hits="1" data-linenumber="49">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">        when :date, :datetime</code>
+          <code class="ruby">        scope :in_published_period, lambda { |*args|</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="50">
-          <span class="hits">4</span>
+        <li class="missed" data-hits="0" data-linenumber="50">
           
-          <code class="ruby">          column_start_name = (options[:start] || :publish_start).to_sym</code>
+          
+          <code class="ruby">          start_date = args[0] || Date.current</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="51">
-          <span class="hits">4</span>
+        <li class="missed" data-hits="0" data-linenumber="51">
           
-          <code class="ruby">          column_end_name = (options[:end] || :publish_end).to_sym</code>
+          
+          <code class="ruby">          end_date = args[1]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="52">
@@ -412,22 +412,22 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="53">
-          <span class="hits">4</span>
+        <li class="missed" data-hits="0" data-linenumber="53">
           
-          <code class="ruby">          unless self.columns_hash[column_start_name.to_s].present? and self.columns_hash[column_end_name.to_s].present?</code>
+          
+          <code class="ruby">          where(arel_table[column_start_name].not_eq(nil)).where(arel_table[column_start_name].lteq(start_date))</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="54">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="54">
           
-          <code class="ruby">            raise ActiveRecord::ConfigurationError, &quot;No '#{column_start_name}'column available for Publishable column on model #{self.name}&quot;</code>
+          
+          <code class="ruby">            .where(arel_table[column_end_name].eq(nil).or(arel_table[column_end_name].gteq(end_date)))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="55">
           
           
-          <code class="ruby">          end</code>
+          <code class="ruby">        }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="56">
@@ -436,640 +436,640 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="57">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="57">
+          <span class="hits">1</span>
           
-          <code class="ruby">          column_start_type = self.columns_hash[column_start_name.to_s].type</code>
+          <code class="ruby">        scope :out_published_period, lambda { |*args|</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="58">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="58">
           
-          <code class="ruby">          column_end_type = self.columns_hash[column_end_name.to_s].type</code>
+          
+          <code class="ruby">          start_date = args[0] || Date.current</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="59">
+        <li class="missed" data-hits="0" data-linenumber="59">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">          end_date = args[1]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="60">
+        <li class="missed" data-hits="0" data-linenumber="60">
           
           
-          <code class="ruby">          #Raise a error case publish type and column_type not equals</code>
+          <code class="ruby">          where(arel_table[column_start_name].gt(start_date).or(arel_table[column_end_name].lt(end_date)))</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="61">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="61">
           
-          <code class="ruby">          unless column_start_type == publish_type </code>
+          
+          <code class="ruby">        }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="62">
+        <li class="never" data-hits="" data-linenumber="62">
           
           
-          <code class="ruby">            raise ActiveRecord::ConfigurationError, &quot;The '#{column_start_name}'column not equals declared type publish on model #{self.name}&quot;</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="63">
           
           
-          <code class="ruby">          end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="64">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
           
-          <code class="ruby">          unless column_end_type == publish_type </code>
+          <code class="ruby">      class_eval &lt;&lt;-RUBY, __FILE__, __LINE__ + 1</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="65">
+        <li class="never" data-hits="" data-linenumber="65">
           
           
-          <code class="ruby">            raise ActiveRecord::ConfigurationError, &quot;The '#{column_end_name}'column not equals declared type publish on model #{self.name}&quot;</code>
+          <code class="ruby">        def in_published_period?(_when = DateTime.now)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="66">
           
           
-          <code class="ruby">          end</code>
+          <code class="ruby">          #{column_start_name} ? #{column_start_name} &lt;= _when &amp;&amp; </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="67">
           
           
-          <code class="ruby">        when :boolean</code>
+          <code class="ruby">            ( #{column_end_name} ? #{column_end_name} &gt;= _when : true) : false</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="68">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="68">
           
-          <code class="ruby">          column_name = (options[:on] || :published).to_sym</code>
+          
+          <code class="ruby">        end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="69">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="69">
           
-          <code class="ruby">          column_type = self.columns_hash[column_name.to_s].type</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="70">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">        def out_published_period?(_when = DateTime.now)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="71">
           
           
-          <code class="ruby">          #Raise a error case publish type and column_type not equals</code>
+          <code class="ruby">          !in_published_period?(_when)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="72">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="72">
           
-          <code class="ruby">          unless column_type == publish_type </code>
+          
+          <code class="ruby">        end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="73">
+        <li class="never" data-hits="" data-linenumber="73">
           
           
-          <code class="ruby">            raise ActiveRecord::ConfigurationError, &quot;The '#{column_name}'column not equals declared type publish on model #{self.name}&quot;</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="74">
           
           
-          <code class="ruby">          end</code>
+          <code class="ruby">        def publish_by_period(_when_start = DateTime.now, _when_end = nil)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="75">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="75">
           
-          <code class="ruby">          unless self.columns_hash[column_name.to_s].present? and self.columns_hash[column_name.to_s].present?</code>
+          
+          <code class="ruby">          unless in_published_period?(_when_start)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="76">
+        <li class="never" data-hits="" data-linenumber="76">
           
           
-          <code class="ruby">            raise ActiveRecord::ConfigurationError, &quot;No '#{column_name}'column available for Publishable column on model #{self.name}&quot;</code>
+          <code class="ruby">            self.#{column_start_name} = _when_start</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="77">
           
           
-          <code class="ruby">          end</code>
+          <code class="ruby">            self.#{column_end_name} = _when_end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="78">
           
           
-          <code class="ruby">        else</code>
+          <code class="ruby">          end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="79">
+        <li class="never" data-hits="" data-linenumber="79">
           
           
-          <code class="ruby">          raise ActiveRecord::ConfigurationError, &quot;Invalid publish_type #{publish_type} for Publishable column on model #{self.name}&quot;</code>
+          <code class="ruby">        end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="80">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="81">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">        def publish_by_period!(_when_start = DateTime.now, _when_end = nil)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="82">
           
           
-          <code class="ruby">      </code>
+          <code class="ruby">          publish_by_period(_when_start, _when_end) &amp;&amp; (!respond_to?(:save) || save)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="83">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">        end</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="84">
-          <span class="hits">3</span>
+        <li class="never" data-hits="" data-linenumber="84">
           
-          <code class="ruby">      if respond_to?(:scope)</code>
+          
+          <code class="ruby">      RUBY</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="85">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="86">
           
           
-          <code class="ruby">        # define published/unpublished scope</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="87">
-          <span class="hits">3</span>
+        <li class="never" data-hits="" data-linenumber="87">
           
-          <code class="ruby">        case publish_type</code>
+          
+          <code class="ruby">    # @!group Query scopes added to publishable models</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="88">
           
           
-          <code class="ruby">          when :date,:datetime</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="89">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="89">
           
-          <code class="ruby">            scope :published, lambda { |*args|</code>
+          
+          <code class="ruby">    # @!method published</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="90">
-          <span class="hits">11</span>
+        <li class="never" data-hits="" data-linenumber="90">
           
-          <code class="ruby">              start_date = args[0] || Date.current</code>
+          
+          <code class="ruby">    #   Query scope added to publishables that can be used to find published records. For Date/DateTime publishables,</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="91">
-          <span class="hits">11</span>
+        <li class="never" data-hits="" data-linenumber="91">
           
-          <code class="ruby">              end_date = args[1]</code>
+          
+          <code class="ruby">    #   you can pass a specific date on which the results should be published.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="92">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    #   @example Find only records that are currently published</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="93">
-          <span class="hits">11</span>
+        <li class="never" data-hits="" data-linenumber="93">
           
-          <code class="ruby">              where(arel_table[column_start_name].not_eq(nil)).where(arel_table[column_start_name].lteq(start_date))</code>
+          
+          <code class="ruby">    #     published_posts = Post.published</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="94">
           
           
-          <code class="ruby">                .where(arel_table[column_end_name].eq(nil).or(arel_table[column_end_name].gteq(end_date)))</code>
+          <code class="ruby">    #   @example Find only records that will be published in two days</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="95">
           
           
-          <code class="ruby">            }</code>
+          <code class="ruby">    #     future_posts = Post.published(Date.current + 2.days)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="96">
           
           
+          <code class="ruby">    #   @param [Date, Time, nil] when Specify a date/time for Date/DateTime publishables - defaults to the current date/time</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="97">
+          
+          
+          <code class="ruby">    #   @!scope class</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="98">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="97">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="99">
           
-          <code class="ruby">            scope :unpublished, lambda { |*args|</code>
+          
+          <code class="ruby">    # @!method unpublished</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="98">
-          <span class="hits">11</span>
+        <li class="never" data-hits="" data-linenumber="100">
           
-          <code class="ruby">              start_date = args[0] || Date.current</code>
-        </li>
-      
-        <li class="covered" data-hits="11" data-linenumber="99">
-          <span class="hits">11</span>
           
-          <code class="ruby">              end_date = args[1]</code>
-        </li>
-      
-        <li class="covered" data-hits="11" data-linenumber="100">
-          <span class="hits">11</span>
-          
-          <code class="ruby">              where(arel_table[column_start_name].gt(start_date).or(arel_table[column_end_name].lt(end_date)))</code>
+          <code class="ruby">    #   Query scope added to publishables that can be used find records which are not published. For Date/DateTime</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="101">
           
           
-          <code class="ruby">            }</code>
+          <code class="ruby">    #   publishables, you can pass a specific date on which the results should not have been published.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="102">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    #   @example Find only records that are not currently published</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="103">
           
           
-          <code class="ruby">          when :boolean</code>
+          <code class="ruby">    #     unpublished_posts = Post.unpublished</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="104">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="104">
           
-          <code class="ruby">            scope :published, lambda {</code>
+          
+          <code class="ruby">    #   @param [Date, Time, nil] when Specify a date/time for Date/DateTime publishables - defaults to the current date/time</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="105">
+        <li class="never" data-hits="" data-linenumber="105">
           
           
-          <code class="ruby">              where(column_name =&gt; true)</code>
+          <code class="ruby">    #   @!scope class</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="106">
           
           
-          <code class="ruby">            }</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="107">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    # @!method recent</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="108">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="108">
           
-          <code class="ruby">            scope :unpublished, lambda {</code>
+          
+          <code class="ruby">    #   Query scope added to publishables that can be used to lookup records which are currently published. The results</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="109">
+        <li class="never" data-hits="" data-linenumber="109">
           
           
-          <code class="ruby">              where(column_name =&gt; false)</code>
+          <code class="ruby">    #   are returned in descending order based on the published date/time.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="110">
           
           
-          <code class="ruby">            }</code>
+          <code class="ruby">    #   @example Get the 10 most recently-published records</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="111">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    #     recent_posts = Post.recent(10)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="112">
           
           
-          <code class="ruby">          else</code>
+          <code class="ruby">    #   @param [Integer, nil] how_many Specify how many records to return</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="113">
+        <li class="never" data-hits="" data-linenumber="113">
           
           
-          <code class="ruby">            raise ActiveRecord::ConfigurationError, &quot;Invalid column_type #{publish_type} for Publishable column on model #{self.name}&quot;</code>
+          <code class="ruby">    #   @!scope class</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="114">
           
           
-          <code class="ruby">        end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="115">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    # @!method upcoming</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="116">
           
           
-          <code class="ruby">        # define recent/upcoming scopes</code>
+          <code class="ruby">    #   Query scope added to publishables that can be used to lookup records which are not currently published. The</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="117">
-          <span class="hits">3</span>
+        <li class="never" data-hits="" data-linenumber="117">
           
-          <code class="ruby">        if [:date, :datetime].include? publish_type</code>
+          
+          <code class="ruby">    #   results are returned in ascending order based on the published date/time.</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="118">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="118">
           
-          <code class="ruby">          scope :recent, lambda { |*args|</code>
+          
+          <code class="ruby">    #   @example Get all posts that will be published in the future</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="119">
-          <span class="hits">11</span>
+        <li class="never" data-hits="" data-linenumber="119">
           
-          <code class="ruby">            how_many = args[0] || nil</code>
+          
+          <code class="ruby">    #     upcoming_posts = Post.upcoming</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="120">
-          <span class="hits">11</span>
+        <li class="never" data-hits="" data-linenumber="120">
           
-          <code class="ruby">            col_name = arel_table[column_start_name].name</code>
+          
+          <code class="ruby">    #   @param [Integer, nil] how_many Specify how many records to return</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="121">
-          <span class="hits">11</span>
+        <li class="never" data-hits="" data-linenumber="121">
           
-          <code class="ruby">            published.limit(how_many).order(&quot;#{col_name} DESC&quot;)</code>
+          
+          <code class="ruby">    #   @!scope class</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="122">
           
           
-          <code class="ruby">          }</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="123">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="123">
           
-          <code class="ruby">          scope :upcoming, lambda { |*args|</code>
+          
+          <code class="ruby">    # @!endgroup</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="124">
-          <span class="hits">11</span>
+        <li class="never" data-hits="" data-linenumber="124">
           
-          <code class="ruby">            how_many = args[0] || nil</code>
+          
+          <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="125">
-          <span class="hits">11</span>
+        <li class="never" data-hits="" data-linenumber="125">
           
-          <code class="ruby">            col_name = arel_table[column_start_name].name</code>
+          
+          <code class="ruby">    # @!group Instance methods added to publishable models</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="126">
-          <span class="hits">11</span>
+        <li class="never" data-hits="" data-linenumber="126">
           
-          <code class="ruby">            unpublished.limit(how_many).order(&quot;#{col_name} ASC&quot;)</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="127">
           
           
-          <code class="ruby">          }</code>
+          <code class="ruby">    # @!method published?</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="128">
           
           
-          <code class="ruby">        end</code>
+          <code class="ruby">    #   Is this object published?</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="129">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    #   @param [Date, Time, nil] when For Date/DateTime publishables, a date/time can be passed to determine if the</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="130">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby">    #     object was / will be published on the given date.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="131">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    #   @return [Boolean] true if published, false if not published.</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="132">
-          <span class="hits">3</span>
+        <li class="never" data-hits="" data-linenumber="132">
           
-          <code class="ruby">      case publish_type</code>
+          
+          <code class="ruby">    #   @!scope instance</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="133">
           
           
-          <code class="ruby">        when :date, :datetime</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="134">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="134">
           
-          <code class="ruby">          class_eval &lt;&lt;-EVIL, __FILE__, __LINE__ + 1</code>
+          
+          <code class="ruby">    # @!method unpublished?</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="135">
           
           
-          <code class="ruby">            def published?(_when = DateTime.now)</code>
+          <code class="ruby">    #   Is this object not published?</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="136">
           
           
-          <code class="ruby">              if('#{publish_type}'.to_sym == :date) </code>
+          <code class="ruby">    #   @param [Date, Time, nil] when For Date/DateTime publishables, a date/time can be passed to determine if the</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="137">
           
           
-          <code class="ruby">                _when = _when.to_date</code>
+          <code class="ruby">    #     object was not / will not be published on the given date.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="138">
           
           
-          <code class="ruby">              end</code>
+          <code class="ruby">    #   @return [Boolean] false if published, true if not published.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="139">
           
           
-          <code class="ruby">              #{column_start_name} ? #{column_start_name} &lt;= _when &amp;&amp; </code>
+          <code class="ruby">    #   @!scope instance</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="140">
           
           
-          <code class="ruby">                ( #{column_end_name} ? #{column_end_name} &gt;= _when : true) : false</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="141">
           
           
-          <code class="ruby">            end</code>
+          <code class="ruby">    # @!method publish</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="142">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    #   Publish this object.  For a Boolean publish field, the field is set to true; for a Date/DateTime field, the</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="143">
           
           
-          <code class="ruby">            def unpublished?(_when = DateTime.now)</code>
+          <code class="ruby">    #   field is set to the given Date/Time or to the current date/time.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="144">
           
           
-          <code class="ruby">              !published?(_when)</code>
+          <code class="ruby">    #   @param [Date, Time, nil] when For Date/DateTime publishables, a date/time can be passed to specify when the</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="145">
           
           
-          <code class="ruby">            end</code>
+          <code class="ruby">    #     record will be published. Defaults to +Date.current+ or +Time.now+.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="146">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    #   @!scope instance</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="147">
           
           
-          <code class="ruby">            def publish(_when_start = DateTime.now, _when_end = nil)</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="148">
           
           
-          <code class="ruby">              if('#{publish_type}'.to_sym == :date) </code>
+          <code class="ruby">    # @!method publish!</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="149">
           
           
-          <code class="ruby">                _when_start = _when_start.to_date</code>
+          <code class="ruby">    #   Publish this object, then immediately save it to the database.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="150">
           
           
-          <code class="ruby">              end</code>
+          <code class="ruby">    #   @param [Date, Time, nil] when</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="151">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    #   @!scope instance</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="152">
           
           
-          <code class="ruby">              unless published?(_when_start)</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="153">
           
           
-          <code class="ruby">                self.#{column_start_name} = _when_start</code>
+          <code class="ruby">    # @!method unpublish</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="154">
           
           
-          <code class="ruby">                self.#{column_end_name} = _when_end</code>
+          <code class="ruby">    #   Un-publish this object, i.e. set it to not be published.  For a Boolean publish field, the field is set to</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="155">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    #   false; for a Date/DateTime field, the field is set to null.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="156">
           
           
-          <code class="ruby">                puts self.#{column_start_name}</code>
+          <code class="ruby">    #   @!scope instance</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="157">
           
           
-          <code class="ruby">              end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="158">
           
           
-          <code class="ruby">            end</code>
+          <code class="ruby">    # @!method unpublish!</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="159">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    #   Un-publish this object, then immediately save it to the database.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="160">
           
           
-          <code class="ruby">            def publish!(_when_start = DateTime.now, _when_end = nil)</code>
+          <code class="ruby">    #   @!scope instance</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="161">
           
           
-          <code class="ruby">              publish(_when_start, _when_end) &amp;&amp; (!respond_to?(:save) || save)</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="162">
           
           
-          <code class="ruby">            end</code>
+          <code class="ruby">    # @!endgroup</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="163">
@@ -1081,742 +1081,10 @@
         <li class="never" data-hits="" data-linenumber="164">
           
           
-          <code class="ruby">            def unpublish()</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="165">
-          
-          
-          <code class="ruby">              self.#{column_start_name} = null</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="166">
-          
-          
-          <code class="ruby">              self.#{column_end_name} = null</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="167">
-          
-          
-          <code class="ruby">            end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="168">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="169">
-          
-          
-          <code class="ruby">            def unpublish!()</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="170">
-          
-          
-          <code class="ruby">              unpublish() &amp;&amp; (!respond_to?(:save) || save)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="171">
-          
-          
-          <code class="ruby">            end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="172">
-          
-          
-          <code class="ruby">          EVIL</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="173">
-          
-          
-          <code class="ruby">        </code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="174">
-          
-          
-          <code class="ruby">        when :boolean</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="175">
-          <span class="hits">1</span>
-          
-          <code class="ruby">          class_eval &lt;&lt;-EVIL, __FILE__, __LINE__ + 1</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="176">
-          
-          
-          <code class="ruby">            def published?()</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="177">
-          
-          
-          <code class="ruby">              #{column_name}</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="178">
-          
-          
-          <code class="ruby">            end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="179">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="180">
-          
-          
-          <code class="ruby">            def unpublished?()</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="181">
-          
-          
-          <code class="ruby">              !published?()</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="182">
-          
-          
-          <code class="ruby">            end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="183">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="184">
-          
-          
-          <code class="ruby">            def publish()</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="185">
-          
-          
-          <code class="ruby">              self.#{column_name} = true</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="186">
-          
-          
-          <code class="ruby">            end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="187">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="188">
-          
-          
-          <code class="ruby">            def publish!()</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="189">
-          
-          
-          <code class="ruby">              publish()</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="190">
-          
-          
-          <code class="ruby">              save if respond_to?(:save)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="191">
-          
-          
-          <code class="ruby">            end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="192">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="193">
-          
-          
-          <code class="ruby">            def unpublish()</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="194">
-          
-          
-          <code class="ruby">              self.#{column_name} = false</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="195">
-          
-          
-          <code class="ruby">            end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="196">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="197">
-          
-          
-          <code class="ruby">            def unpublish!()</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="198">
-          
-          
-          <code class="ruby">              unpublish()</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="199">
-          
-          
-          <code class="ruby">              save if respond_to?(:save)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="200">
-          
-          
-          <code class="ruby">            end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="201">
-          
-          
-          <code class="ruby">          EVIL</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="202">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="203">
-          
-          
-          <code class="ruby">        else</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="204">
-          
-          
-          <code class="ruby">          raise ActiveRecord::ConfigurationError, &quot;Invalid column_type #{publish_type} for Publishable column on model #{self.name}&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="205">
-          
-          
-          <code class="ruby">      end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="206">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="207">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="208">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="209">
-          
-          
-          <code class="ruby">    # @!group Query scopes added to publishable models</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="210">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="211">
-          
-          
-          <code class="ruby">    # @!method published</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="212">
-          
-          
-          <code class="ruby">    #   Query scope added to publishables that can be used to find published records. For Date/DateTime publishables,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="213">
-          
-          
-          <code class="ruby">    #   you can pass a specific date on which the results should be published.</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="214">
-          
-          
-          <code class="ruby">    #   @example Find only records that are currently published</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="215">
-          
-          
-          <code class="ruby">    #     published_posts = Post.published</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="216">
-          
-          
-          <code class="ruby">    #   @example Find only records that will be published in two days</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="217">
-          
-          
-          <code class="ruby">    #     future_posts = Post.published(Date.current + 2.days)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="218">
-          
-          
-          <code class="ruby">    #   @param [Date, Time, nil] when Specify a date/time for Date/DateTime publishables - defaults to the current date/time</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="219">
-          
-          
-          <code class="ruby">    #   @!scope class</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="220">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="221">
-          
-          
-          <code class="ruby">    # @!method unpublished</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="222">
-          
-          
-          <code class="ruby">    #   Query scope added to publishables that can be used find records which are not published. For Date/DateTime</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="223">
-          
-          
-          <code class="ruby">    #   publishables, you can pass a specific date on which the results should not have been published.</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="224">
-          
-          
-          <code class="ruby">    #   @example Find only records that are not currently published</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="225">
-          
-          
-          <code class="ruby">    #     unpublished_posts = Post.unpublished</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="226">
-          
-          
-          <code class="ruby">    #   @param [Date, Time, nil] when Specify a date/time for Date/DateTime publishables - defaults to the current date/time</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="227">
-          
-          
-          <code class="ruby">    #   @!scope class</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="228">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="229">
-          
-          
-          <code class="ruby">    # @!method recent</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="230">
-          
-          
-          <code class="ruby">    #   Query scope added to publishables that can be used to lookup records which are currently published. The results</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="231">
-          
-          
-          <code class="ruby">    #   are returned in descending order based on the published date/time.</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="232">
-          
-          
-          <code class="ruby">    #   @example Get the 10 most recently-published records</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="233">
-          
-          
-          <code class="ruby">    #     recent_posts = Post.recent(10)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="234">
-          
-          
-          <code class="ruby">    #   @param [Integer, nil] how_many Specify how many records to return</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="235">
-          
-          
-          <code class="ruby">    #   @!scope class</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="236">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="237">
-          
-          
-          <code class="ruby">    # @!method upcoming</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="238">
-          
-          
-          <code class="ruby">    #   Query scope added to publishables that can be used to lookup records which are not currently published. The</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="239">
-          
-          
-          <code class="ruby">    #   results are returned in ascending order based on the published date/time.</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="240">
-          
-          
-          <code class="ruby">    #   @example Get all posts that will be published in the future</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="241">
-          
-          
-          <code class="ruby">    #     upcoming_posts = Post.upcoming</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="242">
-          
-          
-          <code class="ruby">    #   @param [Integer, nil] how_many Specify how many records to return</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="243">
-          
-          
-          <code class="ruby">    #   @!scope class</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="244">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="245">
-          
-          
-          <code class="ruby">    # @!endgroup</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="246">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="247">
-          
-          
-          <code class="ruby">    # @!group Instance methods added to publishable models</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="248">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="249">
-          
-          
-          <code class="ruby">    # @!method published?</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="250">
-          
-          
-          <code class="ruby">    #   Is this object published?</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="251">
-          
-          
-          <code class="ruby">    #   @param [Date, Time, nil] when For Date/DateTime publishables, a date/time can be passed to determine if the</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="252">
-          
-          
-          <code class="ruby">    #     object was / will be published on the given date.</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="253">
-          
-          
-          <code class="ruby">    #   @return [Boolean] true if published, false if not published.</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="254">
-          
-          
-          <code class="ruby">    #   @!scope instance</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="255">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="256">
-          
-          
-          <code class="ruby">    # @!method unpublished?</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="257">
-          
-          
-          <code class="ruby">    #   Is this object not published?</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="258">
-          
-          
-          <code class="ruby">    #   @param [Date, Time, nil] when For Date/DateTime publishables, a date/time can be passed to determine if the</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="259">
-          
-          
-          <code class="ruby">    #     object was not / will not be published on the given date.</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="260">
-          
-          
-          <code class="ruby">    #   @return [Boolean] false if published, true if not published.</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="261">
-          
-          
-          <code class="ruby">    #   @!scope instance</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="262">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="263">
-          
-          
-          <code class="ruby">    # @!method publish</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="264">
-          
-          
-          <code class="ruby">    #   Publish this object.  For a Boolean publish field, the field is set to true; for a Date/DateTime field, the</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="265">
-          
-          
-          <code class="ruby">    #   field is set to the given Date/Time or to the current date/time.</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="266">
-          
-          
-          <code class="ruby">    #   @param [Date, Time, nil] when For Date/DateTime publishables, a date/time can be passed to specify when the</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="267">
-          
-          
-          <code class="ruby">    #     record will be published. Defaults to +Date.current+ or +Time.now+.</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="268">
-          
-          
-          <code class="ruby">    #   @!scope instance</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="269">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="270">
-          
-          
-          <code class="ruby">    # @!method publish!</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="271">
-          
-          
-          <code class="ruby">    #   Publish this object, then immediately save it to the database.</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="272">
-          
-          
-          <code class="ruby">    #   @param [Date, Time, nil] when</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="273">
-          
-          
-          <code class="ruby">    #   @!scope instance</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="274">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="275">
-          
-          
-          <code class="ruby">    # @!method unpublish</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="276">
-          
-          
-          <code class="ruby">    #   Un-publish this object, i.e. set it to not be published.  For a Boolean publish field, the field is set to</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="277">
-          
-          
-          <code class="ruby">    #   false; for a Date/DateTime field, the field is set to null.</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="278">
-          
-          
-          <code class="ruby">    #   @!scope instance</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="279">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="280">
-          
-          
-          <code class="ruby">    # @!method unpublish!</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="281">
-          
-          
-          <code class="ruby">    #   Un-publish this object, then immediately save it to the database.</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="282">
-          
-          
-          <code class="ruby">    #   @!scope instance</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="283">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="284">
-          
-          
-          <code class="ruby">    # @!endgroup</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="285">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="286">
-          
-          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="287">
+        <li class="never" data-hits="" data-linenumber="165">
           
           
           <code class="ruby">end</code>
@@ -1826,14 +1094,14 @@
   </pre>
 </div>
       
-        <div class="source_table" id="f1a5db56858f4caf44ed135538a6c5984f1b370c">
+        <div class="source_table" id="1bc89fae1346b4be3c3574f28a454773471c5f9f">
   <div class="header">
     <h3>spec/support/matcher_each.rb</h3>
-    <h4><span class="yellow">85.71 %</span> covered</h4>
+    <h4><span class="red">14.29 %</span> covered</h4>
     <div>
       <b>7</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>6</b> lines missed.</span>
     </div>
   </div>
   
@@ -1846,26 +1114,26 @@
           <code class="ruby">RSpec::Matchers.define :each do |meta|</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="2">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="2">
+          
           
           <code class="ruby">  match do |actual|</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="3">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
           
           <code class="ruby">    actual.each_with_index do |i, j|</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="4">
-          <span class="hits">11</span>
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
           
           <code class="ruby">      @elem = j</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="5">
-          <span class="hits">11</span>
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
           
           <code class="ruby">      i.should meta</code>
         </li>
@@ -1888,8 +1156,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="9">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
           
           <code class="ruby">  failure_message_for_should do |actual|</code>
         </li>

@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-require 'publishable/railtie' if defined?(Rails)
+require 'published_by_period/railtie' if defined?(Rails)
 
 # Allows a given boolean, date, or datetime column to indicate whether a model object is published.
 # Boolean published column just is an on/off flag.
@@ -68,11 +68,11 @@ module PublishedByPeriod
         end
 
         def out_published_period?(_when = DateTime.now)
-          !published?(_when)
+          !in_published_period?(_when)
         end
 
         def publish_by_period(_when_start = DateTime.now, _when_end = nil)
-          unless published?(_when_start)
+          unless in_published_period?(_when_start)
             self.#{column_start_name} = _when_start
             self.#{column_end_name} = _when_end
           end
